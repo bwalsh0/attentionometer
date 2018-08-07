@@ -1,2 +1,0 @@
-# bootstrapTest
-testPage.html
