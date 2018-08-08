@@ -74,7 +74,7 @@ function generateUserChannel(){
       userChannel = 'channel-' + guid;
       localStorage.setItem("channel", userChannel);
   }
-  return userChannel;
+  return "channel-d2fd1aa7-9fc7-4625-2c13-27a96421fc53";
 }
 
 // send a message to the user private channel to trigger a push notification
