@@ -93,7 +93,7 @@ function showNotification(message) {
   // a link property and use it in the click_url of the notification
 
   // The notification title
-  const notificationTitle = 'Web Push Notification';
+  const notificationTitle = 'Attentionometer';
 
   // The notification properties
   const notificationOptions = {
