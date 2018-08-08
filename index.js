@@ -68,13 +68,13 @@ function S4() {
 // generate the user private channel and save it at the local storage
 // so we always use the same channel for each user
 function generateUserChannel(){
-  userChannel = localStorage.getItem("channel");
-  if (userChannel == null || userChannel == "null"){ 
-      guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();               
-      userChannel = 'channel-' + guid;
-      localStorage.setItem("channel", userChannel);
-  }
-  return "channel-d2fd1aa7-9fc7-4625-2c13-27a96421fc53";
+  userChannel = "channel-d2fd1aa7-9fc7-4625-2c13-27a96421fc53";
+  // if (userChannel == null || userChannel == "null"){ 
+  //     guid = (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();               
+  //     userChannel = 'channel-' + guid;
+  //     localStorage.setItem("channel", userChannel);
+  // }
+  return userChannel;
 }
 
 // send a message to the user private channel to trigger a push notification
