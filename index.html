@@ -63,18 +63,7 @@
         <h1>Attentionometer</h1>
 
         <p>
-          Your channel is: <code><span id="channel">...</span></code>
-        </p>
-
-        <p>
-            This was performed through the new <code>subscribeWithNotifications</code> method in the Realtime JavaScript SDK.
-        </p>
-        <p>
-            Demo time! Clicking on the following button will send a new push notification to your private channel (only you'll see the push).
-        </p>
-
-        <p>
-          <button id="sendButton" class="button-primary" onclick="javascript:send();">Send me a push notification</button>       
+          <button id="sendButton" class="button-primary" onclick="javascript:send();">Wants Attention</button>       
 
       </div>
       <div class="one-half column" style="margin-top: 10%">
@@ -85,10 +74,14 @@
 
   <div class="container">
     <div class="row">
-      <div class="twelve column" style="margin-top: 2%">        
+      <div class="twelve column" style="margin-top: 2%">   
+      <h1>Debug</h1>     
         <p>
-          Let's try it. Copy the following curl command and <a href="https://github.com/realtime-framework/WebPushNotifications">navigate away</a> from this website. Paste the command in your terminal window and send yourself a push notification. When you receive it click on the pop-up and you'll be redirected to the Realtime homepage.
-        </p>       
+          Your channel is: <code><span id="channel">...</span></code>
+        </p>  
+        <p>
+          RealTimeJavaScriptSDK - <code>subscribeWithNotifications</code>
+        </p>     
 
       </div>
     </div>
