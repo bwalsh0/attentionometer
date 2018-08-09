@@ -206,7 +206,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-image: url('https://imgur.com/tReM1bM');
+  background-image:url('https://imgur.com/tReM1bM');
   background-position:center;
   background-repeat:no-repeat;
   border-color: #33C3F0; }
