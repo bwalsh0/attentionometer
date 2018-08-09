@@ -15,6 +15,8 @@
   
   <link rel="icon" type="image/png" href="img/realtime-logo.jpg">
 
+
+
   <!-- THESE ARE THE REQUIRED FILES TO USE WEB PUSH NOTIFICATIONS -->
   <link rel="manifest" href="manifest.json">  
   <script src="//messaging-public.realtime.co/js/2.1.0/ortc.js"></script>
@@ -23,6 +25,21 @@
   <!-- THESE FILES ARE ONLY REQUIRED FOR THE CURRENT EXAMPLE -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
   <script src="index.js"></script>
+
+  
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBYHFCxuoWvrEnxBR0p66mRf_XQypydzfA",
+    authDomain: "attentionometer.firebaseapp.com",
+    databaseURL: "https://attentionometer.firebaseio.com",
+    projectId: "attentionometer",
+    storageBucket: "",
+    messagingSenderId: "233362961697"
+  };
+  firebase.initializeApp(config);
+</script>
 
 </head>
 <body>
@@ -63,7 +80,11 @@
         <h1>Attentionometer</h1>
 
         <p>
-          <button id="sendButton" class="button-primary" onclick="javascript:send();">Wants Attention</button>       
+          <button id="sendButton" class="button-primary" onclick="javascript:send();">Get Attention >:(</button>   
+          <form>
+<input type="button" value="Put Your Text Here" onclick="window.location.href='https://api.telegram.org/bot546954862:AAHwMjxXtmiDkMhyl9iyoWgUhtUsPEzCJJA/sendMessage?chat_id=232080416&text=Nicole%20wants%20attention'" />
+</form> 
+             
 
       </div>
       <div class="one-half column" style="margin-top: 10%">
